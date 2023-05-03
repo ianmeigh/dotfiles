@@ -1,0 +1,86 @@
+#!/bin/sh
+
+# Update, Upgrade and Install Dependencies
+echo "Update, Upgrade and Install Dependencies"
+sudo apt-get update >/dev/null
+sudo apt-get upgrade -y >/dev/null
+sudo apt-get install -y \
+      python3-dev \
+      python3-pip \
+      python3-venv \
+      1>/dev/null
+
+# Install Git
+echo "Installing Git"
+sudo apt-get -y install git 1>/dev/null
+
+# Install pyenv
+echo "Installing pyenv"
+curl -s https://pyenv.run | bash 2>/dev/null
+
+# Install Poetry
+echo "Installing Poetry"
+sudo apt-get -y install python3-poetry >/dev/null
+
+# Install pipx
+echo "Installing pipx"
+sudo apt-get -y install pipx >/dev/null
+
+# Install nvm
+echo "Installing nvm"
+curl -so- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash >/dev/null 2>&1
+
+# Install starship
+echo "Installing starship"
+curl -sS https://starship.rs/install.sh | sh -s -- -y 1>/dev/null
+
+# Install nautilus-python to allow nautilus extensions
+echo "Installing nautilus-python to allow nautilus extensions"
+sudo apt-get install -y python3-nautilus 1>/dev/null
+
+# Install VSCode
+echo "Installing VSCode"
+curl -sLo ~/Downloads/vscode_latest.deb https://update.code.visualstudio.com/latest/linux-deb-x64/stable 1>/dev/null
+sudo apt-get install -y ~/Downloads/vscode_latest.deb 1>/dev/null
+
+# Install VSCode Extensions
+echo "Installing VSCode Extensions"
+code --install-extension aaron-bond.better-comments >/dev/null 2>&1
+code --install-extension adpyke.codesnap >/dev/null 2>&1
+code --install-extension asciidoctor.asciidoctor-vscode >/dev/null 2>&1
+code --install-extension DavidAnson.vscode-markdownlint >/dev/null 2>&1
+code --install-extension dbaeumer.vscode-eslint >/dev/null 2>&1
+code --install-extension dsznajder.es7-react-js-snippets >/dev/null 2>&1
+code --install-extension eamodio.gitlens >/dev/null 2>&1
+code --install-extension ecmel.vscode-html-css >/dev/null 2>&1
+code --install-extension esbenp.prettier-vscode >/dev/null 2>&1
+code --install-extension geeebe.duplicate >/dev/null 2>&1
+code --install-extension GitHub.vscode-pull-request-github >/dev/null 2>&1
+code --install-extension Gruntfuggly.todo-tree >/dev/null 2>&1
+code --install-extension HTMLHint.vscode-htmlhint >/dev/null 2>&1
+code --install-extension mrmlnc.vscode-autoprefixer >/dev/null 2>&1
+code --install-extension mrmlnc.vscode-duplicate >/dev/null 2>&1
+code --install-extension ms-azuretools.vscode-docker >/dev/null 2>&1
+code --install-extension ms-python.black-formatter >/dev/null 2>&1
+code --install-extension ms-python.flake8 >/dev/null 2>&1
+code --install-extension ms-python.isort >/dev/null 2>&1
+code --install-extension ms-python.python >/dev/null 2>&1
+code --install-extension ms-python.vscode-pylance >/dev/null 2>&1
+code --install-extension ms-toolsai.jupyter >/dev/null 2>&1
+code --install-extension ms-toolsai.jupyter-keymap >/dev/null 2>&1
+code --install-extension ms-toolsai.jupyter-renderers >/dev/null 2>&1
+code --install-extension ms-toolsai.vscode-jupyter-cell-tags >/dev/null 2>&1
+code --install-extension ms-toolsai.vscode-jupyter-slideshow >/dev/null 2>&1
+code --install-extension ms-vscode-remote.remote-containers >/dev/null 2>&1
+code --install-extension ms-vscode.live-server >/dev/null 2>&1
+code --install-extension njpwerner.autodocstring >/dev/null 2>&1
+code --install-extension oderwat.indent-rainbow >/dev/null 2>&1
+code --install-extension PKief.material-icon-theme >/dev/null 2>&1
+code --install-extension pranaygp.vscode-css-peek >/dev/null 2>&1
+code --install-extension stkb.rewrap >/dev/null 2>&1
+code --install-extension streetsidesoftware.code-spell-checker >/dev/null 2>&1
+code --install-extension Tyriar.lorem-ipsum >/dev/null 2>&1
+code --install-extension wayou.vscode-todo-highlight >/dev/null 2>&1
+code --install-extension xabikos.JavaScriptSnippets >/dev/null 2>&1
+code --install-extension yzhang.markdown-all-in-one >/dev/null 2>&1
+code --install-extension zhuangtongfa.material-theme >/dev/null 2>&1

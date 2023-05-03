@@ -1,0 +1,14 @@
+[user]
+	name = Ian
+	email = 52448404+ianmeigh@users.noreply.github.com
+[core]
+	editor = code --wait
+[init]
+	defaultBranch = main
+[credential]
+	credentialStore = gpg
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process

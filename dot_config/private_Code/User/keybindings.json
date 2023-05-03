@@ -1,0 +1,14 @@
+// Place your key bindings in this file to override the defaults
+[
+  // Toggle focus between terminal and editor
+  {
+    "key": "ctrl+`", "command": "workbench.action.terminal.focus"
+  },
+  { 
+    "key": "ctrl+`", "command": "workbench.action.focusActiveEditorGroup", "when": "terminalFocus"
+  },
+  // emmet - Wrap with abbreviation
+  {
+    "key": "ctrl+shift+1", "command": "editor.emmet.action.wrapWithAbbreviation", "when": "editorHasSelection && editorTextFocus",
+  }
+]

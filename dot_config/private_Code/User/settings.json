@@ -1,0 +1,86 @@
+{
+  // Python
+  "python.terminal.activateEnvironment": true,
+  "python.terminal.activateEnvInCurrentTerminal": true,
+  "python.analysis.autoImportCompletions": false,
+  // Language Settings
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.rulers": [
+      78
+    ],
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[git-commit]": {
+    "editor.rulers": [
+      72,
+      50
+    ],
+    "editor.wordWrap": "on"
+  },
+  // Extension Settings
+  "todohighlight.keywords": [
+    "CREDIT",
+    "DEBUG"
+  ],
+  "black-formatter.args": [
+    "--line-length=77"
+  ],
+  "isort.args": [
+    "--profile",
+    "black"
+  ],
+  // Workbench / Editor Theming
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "material-icon-theme",
+  "editor.fontFamily": "'FiraCode Nerd Font'",
+  "explorer.compactFolders": false,
+  "editor.minimap.enabled": false,
+  "workbench.sideBar.location": "right",
+  // Editor Code Style and Misc.
+  "editor.formatOnSave": true,
+  "editor.formatOnSaveMode": "modifications",
+  "editor.formatOnType": true,
+  "editor.fontLigatures": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.defaultFormatter": null, // Set per language
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "terminal.integrated.enablePersistentSessions": false,
+  "json.maxItemsComputed": 5000,
+  "markdown.extension.toc.updateOnSave": false,
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // Experimental
+  "window.title": "${activeEditorLong}",
+  "editor.formatOnPaste": true,
+  "editor.quickSuggestions": {
+    "strings": true,
+    "comments": true,
+},
+"editor.snippetSuggestions": "top",
+}

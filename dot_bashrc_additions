@@ -1,0 +1,11 @@
+# Additional commands to be evaluated when .bashrc is executed
+
+# Run starship if using vscode
+if [[ "$TERM_PROGRAM" = "vscode" ]]; then
+	eval "$(starship init bash)"
+fi
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"

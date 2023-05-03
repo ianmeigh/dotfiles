@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Add bashrc additions
+echo "Add bashrc additions"
+echo '\n# Include .bashrc_additions\n. ~/.bashrc_additions' >> ~/.bashrc
+
+. ~/.bashrc
+
+# Restart Nautilus
+sudo killall nautilus
+
+echo "Setup Complete!"
