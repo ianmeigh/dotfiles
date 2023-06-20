@@ -84,3 +84,6 @@ code --install-extension wayou.vscode-todo-highlight >/dev/null 2>&1
 code --install-extension xabikos.JavaScriptSnippets >/dev/null 2>&1
 code --install-extension yzhang.markdown-all-in-one >/dev/null 2>&1
 code --install-extension zhuangtongfa.material-theme >/dev/null 2>&1
+code --install-extension batisteo.vscode-django >/dev/null 2>&1
+code --install-extension monosans.djlint >/dev/null 2>&1
+code --install-extension usernamehw.errorlens >/dev/null 2>&1
