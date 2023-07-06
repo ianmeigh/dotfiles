@@ -59,10 +59,14 @@
   // Workbench / Editor Theming
   "workbench.colorTheme": "Default Dark+",
   "workbench.iconTheme": "material-icon-theme",
-  "editor.fontFamily": "'FiraCode Nerd Font'",
-  "explorer.compactFolders": false,
-  "editor.minimap.enabled": false,
+  "workbench.tree.indent": 10,
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#008070"
+  },
   "workbench.sideBar.location": "right",
+  "editor.fontFamily": "'FiraCode Nerd Font'",
+  "editor.minimap.enabled": false,
   "zenMode.centerLayout": true,
   "zenMode.restore": true,
   // Editor Code Style and Misc.
@@ -102,5 +106,6 @@
     "**/templates/**/*.html": "django-html",
     "**/templates/**/*": "django-txt",
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
-  }
+  },
+  "explorer.compactFolders": false
 }
