@@ -26,6 +26,9 @@ sudo apt-get -y install python3-poetry >/dev/null
 echo "Installing pipx"
 sudo apt-get -y install pipx >/dev/null
 
+# Install djlint
+pipx install djlint >/dev/null
+
 # Install nvm
 echo "Installing nvm"
 curl -so- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash >/dev/null 2>&1
