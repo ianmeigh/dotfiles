@@ -56,8 +56,9 @@
     "--profile",
     "black"
   ],
-  // Workbench / Editor Theming
-  "workbench.colorTheme": "Default Dark+",
+  "djlint.useVenv": false,
+  "djlint.pythonPath": "",
+  // 
   "workbench.iconTheme": "material-icon-theme",
   "workbench.tree.indent": 10,
   "workbench.tree.renderIndentGuides": "always",
@@ -107,5 +108,7 @@
     "**/templates/**/*": "django-txt",
     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
   },
-  "explorer.compactFolders": false
+  "explorer.compactFolders": false,
+  "window.zoomLevel": 0.2,
+  "editor.mouseWheelZoom": true,
 }
