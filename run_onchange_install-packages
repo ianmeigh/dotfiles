@@ -79,7 +79,6 @@ code --install-extension ms-vscode.live-server >/dev/null 2>&1
 code --install-extension njpwerner.autodocstring >/dev/null 2>&1
 code --install-extension oderwat.indent-rainbow >/dev/null 2>&1
 code --install-extension PKief.material-icon-theme >/dev/null 2>&1
-code --install-extension pranaygp.vscode-css-peek >/dev/null 2>&1
 code --install-extension stkb.rewrap >/dev/null 2>&1
 code --install-extension streetsidesoftware.code-spell-checker >/dev/null 2>&1
 code --install-extension Tyriar.lorem-ipsum >/dev/null 2>&1
